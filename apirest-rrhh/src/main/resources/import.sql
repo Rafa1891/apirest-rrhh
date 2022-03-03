@@ -5,4 +5,4 @@ INSERT INTO empleados(DNI,nombre,salario,telefono,id_departamento) VALUES ('7190
 INSERT INTO empleados(DNI,nombre,salario,telefono,id_departamento) VALUES ('45622233Z','Jose',14000,654333222,2);
 
 INSERT INTO jefes(DNI,nombre,salario,telefono,id_departamento) VALUES ('87444231A','Manuel',23000,613444576,2);
-INSERT INTO jefes(DNI,nombre,salario,telefono,id_departamento) VALUES ('87444231A','María',25000,622444598,1);
+INSERT INTO jefes(DNI,nombre,salario,telefono,id_departamento) VALUES ('98377766B','María',25000,622444598,1);

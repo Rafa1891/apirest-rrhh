@@ -31,7 +31,7 @@ public class Jefe implements Serializable{
 	private double salario;
 	@Column(nullable=false)
 	private int telefono;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name="id_departamento")
 	private Departamento departamento;
 	

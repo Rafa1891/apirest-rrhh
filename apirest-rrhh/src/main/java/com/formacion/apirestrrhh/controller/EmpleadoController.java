@@ -136,11 +136,11 @@ public class EmpleadoController {
 		}
 		
 		if(empleado==null) {
-			response.put("mensaje", "El producto id:".concat(id.toString().concat(" no existe en la BD.")));
+			response.put("mensaje", "El empleado id:".concat(id.toString().concat(" no existe en la BD.")));
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.NOT_FOUND);
 		}
 		response.put("mensaje", "Eliminado con éxito.");
-		response.put("producto", empleado);
+		response.put("empleado", empleado);
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.OK);
 	}
 }
