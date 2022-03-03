@@ -2,6 +2,7 @@ package com.formacion.apirestrrhh.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -22,9 +23,13 @@ public class Jefe implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id_jefe;
+	@Column(nullable=false,unique=true)
 	private String DNI;
+	@Column(nullable=false)
 	private String nombre;
+	@Column(nullable=false)
 	private double salario;
+	@Column(nullable=false)
 	private int telefono;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="id_departamento")
